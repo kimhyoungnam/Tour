@@ -1,0 +1,65 @@
+
+
+
+@charset "UTF-8";
+
+
+html, body {
+max-width: 100%;
+overflow-x: hidden;
+}
+
+
+/*nav bar(네비게이션 바)*/
+.navbar{
+
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 4px 6px -6px #999;
+    background-color: #FFFFFF;
+  
+  }
+
+
+/*nav bar */
+.navbar-header a {
+  color: purple;
+  font-size: 25px;
+}
+.menu{
+  color : #3C3C3C;
+}
+
+
+
+
+/*Footer(풋터)*/
+  .Tour__Footer {
+  
+    margin-top: 10em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left:8em;
+    color: #aaa;
+    border-top: .05rem solid #e5e5e5;
+    border-bottom: .05rem solid #e5e5e5;
+    background-color: white;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+}
+
+  .Footer__Section a{
+    color: #aaa;
+  }
+
+/* 기업명 */
+.Footer__brand{
+  color:purple;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  position:relative;
+}

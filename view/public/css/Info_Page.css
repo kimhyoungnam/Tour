@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+html, body {
+max-width: 100%;
+overflow-x: hidden;
+}
+
+.Tour__Info{
+    margin: 150px 0 0 0 ;
+}
+
+.Tour__Info .Fashion__InfoL{
+
+    margin-right:15px;
+
+}
+.Fashion__Title h4{
+    color:purple; 
+}
+.Fashion__Title h1{
+    font-weight: bold;
+}
+.Fashion__Summary2{
+    padding-top : 10px;
+}
+.Fashion__Intro h4 {
+    font-weight: bold;
+}
+
+
+
+.Fashion__InfoR .Fashion__img img {
+    max-width: 100%;
+    width: 100%;
+    height: 450px;
+
+}
+.Fashion__InfoR .Fashion__Price img {
+
+    width:25px;
+    height:25px;
+}

@@ -1,0 +1,120 @@
+
+@charset "UTF-8";
+
+
+html, body {
+max-width: 100%;
+overflow-x: hidden;
+}
+
+/*네비바 스크롤 할때 고정(덮기) */
+.navbar{
+
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 4px 6px -6px #999;
+  background-color: #FFFFFF;
+
+}
+
+/*Tour__Menu */
+/*메뉴 항목 */
+.Tour__Menu{
+  margin: 150px 0 0 0;
+}
+
+.Menu__img{
+  margin-right: 20px;
+  height: 60px;
+  max-width: 100px;
+}
+.Menu__Content .Menu__link{
+  color:#505050;
+}
+
+/*Tour__Body */
+/*바디 항목
+  반응형 이미지 확인(높이)*/
+
+.Tour__Body{
+  margin: 70px 0 0 0;
+}
+.Body__Section .Content__Type{
+  margin: 10px 0 0 0;
+  color: purple;
+  font-weight: bold;
+}
+
+.Body__Section .Content__Name{
+  margin: 10px 0 0 0 ;
+}
+.Body__Content{
+  margin:20px 0 0 0 ;
+}
+.Body__Content .Body__link{
+  color:#505050;
+}
+.Body__Content .Body__img{
+     max-width: 100%;
+     width: 100%;
+     height: 170px;
+
+
+}
+
+/*Tour__Bottom */
+
+.Tour__Bottom{
+  margin: 60px 0 40px 0 ;
+}
+
+.Bottom__Content .Bottom__link{
+  color:#505050;
+}
+
+.Bottom__Content .Bottom__img{
+
+    max-width: 100%;
+    width:100%;
+    height: 170px;
+}
+
+
+
+/*nav bar */
+.navbar-header a {
+  color: purple;
+  font-size: 25px;
+}
+.menu{
+  color : #3C3C3C;
+}
+
+
+
+/* Tour__Footer */
+
+.Tour__Footer{
+  
+    margin-top: 10em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left:8em;
+    color: #aaa;
+    border-top: .05rem solid #e5e5e5;
+    border-bottom: .05rem solid #e5e5e5;
+    background-color: white;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+}
+
+/* 기업명 */
+.Footer__brand{
+  color:#aaa;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}

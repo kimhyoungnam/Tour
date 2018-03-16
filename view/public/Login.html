@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+ <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="js/link.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type=text/css href="./css/style.css">
+  </head>
+
+  <body>
+
+<div id="sign" class="container">
+    <h1 class="page-header">로그인</h1>
+    <form action="/login" method="POST" class="form-signin">
+        <div class="input-group">
+            <label for="email" class="sr-only">Email address</label>
+            <input type="email" id="email" name="email" placeholder="Email address" required="required" autofocus="autofocus" aria-describedby="email" class="form-control" />
+            <span class="input-group-addon">
+                <i id="email" class="fa fa-envelope-o"></i>
+            </span>
+        </div>
+        <div class="input-group">
+            <label for="password" class="sr-only">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required="required" autofocus="autofocus" aria-describedby="pwd" class="form-control" />
+            <span class="input-group-addon">
+                <i id="pwd" class="fa fa-lock"></i>
+            </span>
+        </div>
+        <button type="submit" class="btn btn-lg btn-pink btn-block mb30">로그인</button>
+        <hr/>
+        <div class="clearfix mt30">
+            <div class="pull-left">계정이 없으세요?</div>
+            <div class="pull-right">
+                <a href="/users/new" class="btn btn-new btn-mini">회원가입</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+    <script>
+
+        document.querySelector('.sendData').addEventListener('click',function(){
+      
+          var email = document.forms[0].elements[0].value;
+          var password= document.forms[0].elements[1].value;
+          sendData('http://127.0.0.1:9999/login/form',email,password);
+        });
+    
+          sendData = function(url,email,password){
+
+          var data = {'email':email, 'password':password};
+          data = JSON.stringify(data);
+          console.log(data);
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST',url);
+          xhr.setRequestHeader('Content-Type','application/json');
+          xhr.send(data);
+          xhr.addEventListener('load',function(){
+          var result = JSON.parse(xhr.responseText);
+          console.log(result);
+          });
+        };
+    </script>
+
+
+</body>
+
+
+</html>
+

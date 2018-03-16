@@ -1,0 +1,184 @@
+<!Doctype html>
+<html lang="ko">
+<style type="text/css">
+  .navbar-brand {
+    color: purple;
+  }
+
+  .navbar-brand:hover {
+    background-color: #FFFFFF;
+    color: purple;
+  }
+
+  .menu {
+    color: #3c3c3c;
+  }
+
+  .menu:hover {
+    color: #3c3c3c;
+  }
+
+  #search_btn{
+    background-color: purple;
+    color: #FFFFFF;
+
+  }
+
+</style>
+<!-- 그림자 명암 box-shadow -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>메인 페이지</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awsome.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<!--    -->
+
+<body>
+
+  <!-- 메뉴 바 작업   -->
+
+  <!-- 컨테이너 값이 전체를 쓴다는 속성 width=100%-->
+
+  <nav class='navbar navbar-fixed-top'>
+    <div class='container-fluid'>
+      <div class='navbar-header'>
+        <!--설정 해야할 부분 (화면 축소할때 나오는 부분)-->
+        <button type='button' class='navbar-toggle collapsed' data-toggle='collapsed' data-target='#bs-example-navbar-collapse-1'>
+
+              <span class='menu' id='small_login'>로그인</span>
+
+          </button>
+
+        <a class='navbar-brand' href="#"> Freshkilla</a>
+      </div>
+
+      <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+        <ul class='nav navbar-nav navbar-right'>
+          <li class="active">
+            <a class='menu' href="#">도움말</a>
+          </li>
+          <li>
+            <a class='menu' href="#">회원가입</a>
+          </li>
+          <li>
+            <a class='menu' href="#">로그인</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <!-- 네비바 아래 검색바 일정 공백(<br  />) 후 작업 -->
+  <div class='container-fluid'>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class='cotainer'>
+      <div class='row'>
+        <div class='col-md-8 col-md-offset-2'>
+          <div class='input-group'>
+            <input class='form-control input-lg' id='search_info' type='text' />
+            <span class="input-group-btn">
+              <button class="btn-lg" id='search_btn' type="button" style='margin-left: 10px'>검색</button>
+            </span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <!-- container 썸네일 -->
+
+  <div class ='container'>
+    <div class='row'>
+      <br />
+      <br />
+      <div class='col-xs-6 col-md-3'>
+
+          <a href='#' class='thumbnail'>
+            <img src='img/effel.jpg' alt="..."/>
+          </a>
+        </div>
+        <div class='col-xs-6 col-md-3'>
+          <a href='#' class='thumbnail'>
+            <img src='img/bridge.jpg' alt="..."/>
+          </a>
+        </div>
+        <div class='col-xs-6 col-md-3'>
+
+            <a href='#' class='thumbnail'>
+              <img src='img/effel.jpg' alt="..."/>
+            </a>
+          </div>
+
+          <div class='col-xs-6 col-md-3'>
+            <a href='#' class='thumbnail'>
+              <img src='img/bridge.jpg' alt="..."/>
+            </a>
+          </div>
+      </div>
+    </div>
+
+</body>
+<!-- JS  / JQuery-->
+<script src="js/link.js"></script>
+
+</html>
+
+
+<!--
+        <div class= 'search container'>
+          <div class="row text-center">
+              <div class="container">
+                  <h1 class="display-4 col-lg-6">Tip for Trip</h1>
+                  <div class="row" id="big_search">
+                      <div class="col-lg-6">
+                          <div class="input-group">
+                            <input type="text" placeholder="찾고 싶은 장소를 입력해주세요!" aria-label="Search for EVENT" class="form-control" />
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-secondary">검색</button>
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      -->
+      
+      <!--
+      <div class= 'searchBox container'>
+        <div class='row col-lg-5'>
+          <h1 class='display-4'>Tip for Trip</h1>
+        </div>
+        <div class=' row col-lg-5 col-md-6 col-xs-12' id='box_Search'>
+                <div class="input-group">
+                  <input type="text" placeholder="찾고 싶은 장소를 입력해주세요!" aria-label="Search for EVENT" class="form-control" />
+                  <span class="input-group-btn">
+                      <button type="button" class="btn btn-secondary">검색</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    -->
